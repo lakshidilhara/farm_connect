@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Harvests - Buyer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header / Navigation -->
+<header>
+    <div class="logo">FarmConnect</div>
+    <nav>
+        <a href="buyer-dashboard.html">Dashboard</a>
+        <a href="buyer-browse.html" class="active">Browse Harvests</a>
+        <a href="buyer-orders.html">Orders</a>
+        <a href="buyer-profile.html">Profile</a>
+        <a href="index.html">Logout</a>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en" selected>English</option>
+            <option value="si">සිංහල</option>
+            <option value="ta">தமிழ்</option>
+        </select>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main>
+    <section class="browse">
+        <h2>Available Harvests</h2>
+
+        <!-- Filter/Search -->
+        <div class="search-filter">
+            <input type="text" placeholder="Search by product name...">
+            <select>
+                <option value="">All Categories</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="fruits">Fruits</option>
+                <option value="rice">Rice</option>
+            </select>
+            <button class="btn">Search</button>
+        </div>
+
+        <!-- Harvest Listings -->
+        <div class="harvest-list">
+            <div class="harvest-card">
+                <img src="images/beans.jpg" alt="Beans">
+                <h3>Beans</h3>
+                <p>Quantity: 50 kg</p>
+                <p>Price: LKR 200/kg</p>
+                <a href="farmer-details.html" class="btn">Order</a>
+            </div>
+
+            <div class="harvest-card">
+                <img src="images/pumpkin.jpg" alt="Pumpkin">
+                <h3>Pumpkin</h3>
+                <p>Quantity: 30 kg</p>
+                <p>Price: LKR 150/kg</p>
+                <a href="farmer-details.html" class="btn">Order</a>
+            </div>
+
+            <div class="harvest-card">
+                <img src="images/brinjal.jpg" alt="Brinjal">
+                <h3>Brinjal</h3>
+                <p>Quantity: 40 kg</p>
+                <p>Price: LKR 180/kg</p>
+                <a href="farmer-details.html" class="btn">Order</a>
+            </div>
+
+            <!-- Add more harvest cards as needed -->
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 FarmConnect Platform. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

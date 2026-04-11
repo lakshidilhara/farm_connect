@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header / Navigation -->
+<header>
+    <div class="logo">FarmConnect</div>
+    <nav>
+        <a href="buyer-dashboard.html" class="active">Dashboard</a>
+        <a href="buyer-browse.html">Browse Harvests</a>
+        <a href="buyer-orders.html">Orders</a>
+        <a href="messages.html">Messages</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="buyer-profile.html">Profile</a>
+        <a href="index.html">Logout</a>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en" selected>English</option>
+            <option value="si">සිංහල</option>
+            <option value="ta">தமிழ்</option>
+        </select>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main>
+    <section class="dashboard">
+        <h2>Welcome, Buyer!</h2>
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Browse Harvests</h3>
+                <p>View all available products from farmers and place orders directly.</p>
+                <a href="buyer-browse.html" class="btn">Go</a>
+            </div>
+            <div class="card">
+                <h3>Your Orders</h3>
+                <p>Track all your past and current orders from farmers.</p>
+                <a href="buyer-orders.html" class="btn">View Orders</a>
+            </div>
+            <div class="card">
+                <h3>Messages</h3>
+                <p>Communicate directly with farmers about products and delivery.</p>
+                <a href="#" class="btn">Messages</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 FarmConnect Platform. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

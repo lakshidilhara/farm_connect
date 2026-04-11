@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Farmer Dashboard - FarmConnect</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h1 class="logo">FarmConnect</h1>
+
+<nav>
+<a href="farmer-dashboard.html">Dashboard</a>
+<a href="farmer-add-harvest.html">Add Harvest</a>
+<a href="farmer-harvests.html">My Harvests</a>
+<a href="farmer-orders.html">Buyer Requests</a>
+<a href="farmer-messages.html">Messages</a>
+<a href="notifications.html">Notifications</a>
+<a href="farmer-profile.html">Profile</a>
+<a href="index.html">Logout</a>
+<select id="language-select" onchange="changeLanguage(this.value)">
+    <option value="en" selected>English</option>
+    <option value="si">සිංහල</option>
+    <option value="ta">தமிழ்</option>
+</select>
+</nav>
+
+</header>
+
+
+<section class="dashboard">
+
+<h2>Welcome Farmer</h2>
+<p>Manage your harvest and connect with buyers.</p>
+
+<div class="dashboard-cards">
+
+<div class="card">
+<h3>Add New Harvest</h3>
+<p>Post your harvest and make it visible to buyers.</p>
+<a href="farmer-add-harvest.html" class="btn">Add Harvest</a>
+</div>
+
+<div class="card">
+<h3>My Harvests</h3>
+<p>View and manage your posted harvests.</p>
+<a href="farmer-harvests.html" class="btn">My Harvests</a>
+</div>
+
+<div class="card">
+<h3>Buyer Requests</h3>
+<p>View all requests from buyers for your harvests.</p>
+<a href="farmer-orders.html" class="btn">View Requests</a>
+</div>
+
+<div class="card">
+<h3>Messages</h3>
+<p>Check messages from interested buyers.</p>
+<a href="farmer-messages.html" class="btn">Open Messages</a>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

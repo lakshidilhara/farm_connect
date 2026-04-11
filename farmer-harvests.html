@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Harvests - Farmer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">FarmConnect</div>
+        <nav>
+            <a href="farmer-dashboard.html">Dashboard</a>
+            <a href="farmer-add-harvest.html">Add Harvest</a>
+            <a href="farmer-harvests.html" class="active">My Harvests</a>
+            <a href="farmer-orders.html">Buyer Requests</a>
+            <a href="index.html">Logout</a>
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en" selected>English</option>
+                <option value="si">සිංහල</option>
+                <option value="ta">தமிழ்</option>
+            </select>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="dashboard">
+            <h2>My Harvests</h2>
+            <p>Here you can see all the crops you have added. You can edit, delete, or view details including images.</p>
+
+            <div class="harvest-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price (LKR/unit)</th>
+                            <th>Harvest Date</th>
+                            <th>Image</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Beans</td>
+                            <td>50 kg</td>
+                            <td>200</td>
+                            <td>2026-03-10</td>
+                            <td><img src="images/beans.jpg" alt="Beans" class="harvest-image"></td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-outline">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pumpkin</td>
+                            <td>30 kg</td>
+                            <td>180</td>
+                            <td>2026-03-12</td>
+                            <td><img src="images/pumpkin.jpg" alt="Pumpkin" class="harvest-image"></td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-outline">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Brinjal</td>
+                            <td>25 kg</td>
+                            <td>220</td>
+                            <td>2026-03-15</td>
+                            <td><img src="images/brinjal.jpg" alt="Brinjal" class="harvest-image"></td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-outline">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AgriDirect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

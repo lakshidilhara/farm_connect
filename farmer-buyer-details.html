@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Details - AgriDirect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">FarmConnect</div>
+        <nav>
+            <a href="farmer-dashboard.html">Dashboard</a>
+            <a href="farmer-add-harvest.html">Add Harvest</a>
+            <a href="farmer-orders.html">Buyer Requests</a>
+            <a href="farmer-harvests.html">My Harvests</a>
+            <a href="index.html">Logout</a>
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en" selected>English</option>
+                <option value="si">සිංහල</option>
+                <option value="ta">தமிழ்</option>
+            </select>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="details-container">
+            <h2>Buyer & Order Details</h2>
+
+            <div class="detail-box">
+                <h3>Buyer Information</h3>
+                <p><strong>Name:</strong> Terrance Fernando</p>
+                <p><strong>Email:</strong> terrance@example.com</p>
+                <p><strong>Phone:</strong> +94 77 123 4567</p>
+                <p><strong>Location:</strong> Colombo</p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Harvest Requested</h3>
+                <p><strong>Product:</strong> Beans</p>
+                <p><strong>Quantity:</strong> 50 kg</p>
+                <p><strong>Price per Unit:</strong> 100 LKR</p>
+                <p><strong>Requested Date:</strong> 15-03-2026</p>
+            </div>
+
+            <div class="buttons" style="margin-top:20px;">
+                <button class="btn" onclick="window.location.href='farmer-order-confirmed.html'">Accept Order</button>
+                <button class="btn btn-outline" onclick="window.location.href='farmer-orders.html'">Back to Orders</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AgriDirect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Orders - AgriDirect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">FarmConnect</div>
+        <nav>
+            <a href="farmer-dashboard.html">Dashboard</a>
+            <a href="farmer-add-harvest.html">Add Harvest</a>
+            <a href="farmer-orders.html" class="active">Buyer Requests</a>
+            <a href="farmer-harvests.html">My Harvests</a>
+            <a href="index.html">Logout</a>
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en" selected>English</option>
+                <option value="si">සිංහල</option>
+                <option value="ta">தமிழ்</option>
+            </select>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="orders-container">
+            <h2>Buyer Requests</h2>
+
+            <div class="search-filter">
+                <input type="text" placeholder="Search by product name...">
+                <select>
+                    <option value="">Filter by status</option>
+                    <option value="pending">Pending</option>
+                    <option value="accepted">Accepted</option>
+                    <option value="rejected">Rejected</option>
+                </select>
+            </div>
+
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>Buyer</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price (LKR)</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Terrance Fernando</td>
+                        <td>Beans</td>
+                        <td>50 kg</td>
+                        <td>5000</td>
+                        <td>15-03-2026</td>
+                        <td class="status pending">Pending</td>
+                        <td>
+                            <a href="farmer-buyer-details.html" class="btn accept">View / Accept</a>
+                            <button class="btn reject">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chamara Bandara</td>
+                        <td>Pumpkin</td>
+                        <td>30 kg</td>
+                        <td>2700</td>
+                        <td>16-03-2026</td>
+                        <td class="status accepted">Accepted</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Saman Kumara</td>
+                        <td>Brinjal</td>
+                        <td>20 kg</td>
+                        <td>1800</td>
+                        <td>17-03-2026</td>
+                        <td class="status rejected">Rejected</td>
+                        <td>-</td>
+                    </tr>
+                    <!-- Add more requests here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AgriDirect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
