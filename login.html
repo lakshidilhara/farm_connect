@@ -26,13 +26,19 @@
 
 <h2>Login to Your Account</h2>
 
-<form>
+<form id="loginForm">
+
+<label>User Type</label>
+<select id="userType">
+<option value="farmer">Farmer</option>
+<option value="buyer">Buyer</option>
+</select>
 
 <label>Phone Number</label>
-<input type="tel" placeholder="Enter phone number">
+<input type="tel" placeholder="Enter phone number" required>
 
 <label>Password</label>
-<input type="password" placeholder="Enter password">
+<input type="password" placeholder="Enter password" required>
 
 <button type="submit">Login</button>
 
@@ -47,6 +53,19 @@ Don't have an account?
 
 </div>
 
-</body>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
 
+    let role = document.getElementById("userType").value;
+
+    if(role === "farmer"){
+        window.location.href = "farmer-dashboard.html";
+    } else {
+        window.location.href = "buyer-dashboard.html";
+    }
+});
+</script>
+
+</body>
 </html>
